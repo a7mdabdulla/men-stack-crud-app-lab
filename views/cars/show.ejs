@@ -1,0 +1,11 @@
+<body>
+    <h1><%= car.make +" "+ car.model %></h1>
+
+    <a href="/cars">All Cars</a>
+<br><br>
+    <a href="/cars/<%= car._id %>/edit">Edit <%= car.make +" "+ car.model %></a>
+    <br>
+    <form action="/cars/<%= car._id %>?_method=DELETE" method="POST">
+        <button type="submit">Delete <%= car.make +" "+ car.model %></button>
+    </form>
+</body>

@@ -1,0 +1,20 @@
+<body>
+    <h1>Edit <%= car.make +" "+ car.model %></h1>
+
+    <form action="/cars/<%= car._id %>?_method=PUT" method="POST">
+        <label for="make">Make: </label>
+        <input type="text" name="make" id="make" value="<%= car.make %>">
+        <br>
+        <label for="model">Model: </label>
+        <input type="text" name="model" id="model" value="<%= car.model %>">
+        <br>
+        <label for="year">Year: </label>
+        <input type="text" name="year" id="year" value="<%= car.year %>">
+        <br>
+        <label for="color">Color: </label>
+        <input type="text" name="color" id="color" value="<%= car.color %>">
+        <br>
+         <button type="submit">Update Car</button>
+    </form>
+</body>
+
